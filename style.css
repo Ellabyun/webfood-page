@@ -1,75 +1,92 @@
 body {
-    background-color: #282522;
-    color: #F69C43;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(44, 41, 38);
+    margin: 0;
 }
 
-header {
+a {
+    text-decoration: none;
+}
+
+#main-header {
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 40px;
-}
-
-header ul {
-    list-style: none;
-    display: flex;
-}
-
-header ul a {
-    text-decoration: none;
-    color: #F69C43;
-}
-
-header ul li {
-    margin-left: 20px;
-    ;
+    background-color: rgb(29, 26, 24);
+    padding: 0 20px;
 }
 
 #logo {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
+    color: rgb(238, 164, 80);
+    text-transform: uppercase;
 }
 
-main {
-    text-align: center;
+#main-header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#main-header li {
+    margin: 0 16px;
+}
+
+#main-header nav a {
+    color: rgb(185, 131, 31);
+    font-size: 20px;
+}
+
+#main-header nav a:hover {
+    color: rgb(228, 163, 44)
 }
 
 main h1 {
-    font-size: 50px;
+    text-align: center;
+    color: rgb(238, 164, 80);
+    font-size: 48px;
 }
 
-#menus {
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#latest-products {
+    width: 80%;
+    margin: 50px auto;
 }
 
-.menu {
-    width: 450px;
-    margin: 30px;
-    background-color: #E4C8AD;
+#latest-products ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.food-item {
+    background-color: rgb(228, 206, 182);
     border-radius: 6px;
-    box-shadow: 2px 2px 2px 0.8;
-    height: 380px;
-}
-
-.menu img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
     overflow: hidden;
 }
 
-.menu h2 {
-    color: rgb(68, 68, 68);
+.food-item img {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
 }
 
-.menu a {
-    text-decoration: none;
+.food-item-content {
+    padding: 16px;
+    text-align: center;
+}
+
+.btn {
+    background-color: rgb(228, 157, 44);
     color: white;
-    background-color: #F69C43;
-    text-shadow: 1px 1px 2px 0.4;
-    padding: 8px 12px;
-    border-radius: 3px;
+    border-radius: 4px;
+    padding: 8px 24px;
+}
+
+.btn:hover {
+    background-color: rgb(250, 120, 50);
 }
